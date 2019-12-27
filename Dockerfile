@@ -10,7 +10,7 @@ ENV GOPROXY https://goproxy.io/
 
 ENV GO111MODULE on
 
-WORKDIR $GOPATH/src/new_erp_agent_by_go
+WORKDIR $GOPATH/src/actual_practice
 
 ADD . .
 
