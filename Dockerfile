@@ -18,6 +18,8 @@ RUN go mod vendor
 
 EXPOSE 9999
 
-RUN chmod 777 main.go
+#RUN chmod 777 main.go
 
-RUN ./main.go
+RUN go build main.go
+
+RUN ./main
