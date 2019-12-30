@@ -14,5 +14,5 @@ func main() {
 }
 
 func Test2(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"欢迎语": "赵公子大笨蛋...."})
+	c.JSON(http.StatusOK, gin.H{"欢迎语": "赵公子大笨蛋加大白痴...."})
 }
