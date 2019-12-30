@@ -20,6 +20,10 @@ EXPOSE 9999
 
 #RUN chmod 777 main.go
 
-RUN go build main.go
+#RUN go build main.go
 
-CMD ./main
+#CMD ./main
+
+RUN chmod 777 perform.sh
+
+CMD ./perform.sh
