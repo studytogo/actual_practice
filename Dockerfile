@@ -10,11 +10,13 @@ RUN echo 'Asia/Shanghai' >/etc/timezone
 
 #ENV GO111MODULE on
 
+RUN git pull
+
 WORKDIR $GOPATH/src/actual_practice
 
-#ADD . .
+ADD . .
 
-#RUN go mod vendor
+RUN go mod vendor
 
 EXPOSE 9999
 
