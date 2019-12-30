@@ -22,4 +22,4 @@ EXPOSE 9999
 
 RUN go build main.go
 
-RUN ./main
+CMD ./main
