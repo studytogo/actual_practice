@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 	"net/http"
 )
 
@@ -14,5 +15,6 @@ func main() {
 }
 
 func Test2(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"欢迎语": "赵公子大笨蛋加大白痴...."})
+	uuidStr := uuid.New().String()
+	c.JSON(http.StatusOK, gin.H{uuidStr: "赵公子大笨蛋加大白痴...."})
 }
