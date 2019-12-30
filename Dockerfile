@@ -10,8 +10,6 @@ RUN echo 'Asia/Shanghai' >/etc/timezone
 
 #ENV GO111MODULE on
 
-RUN git pull
-
 WORKDIR $GOPATH/src/actual_practice
 
 ADD . .
