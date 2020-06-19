@@ -2,7 +2,7 @@ FROM golang:latest
 
 MAINTAINER zzg
 
-ENV TZ Asia/Shanghai && GOPROXY https://goproxy.io/ && GO111MODULE on
+ENV TZ Asia/Shanghai && GOPROXY https://goproxy.io/ && GO111MODULE off
 
 RUN echo 'Asia/Shanghai' >/etc/timezone
 
