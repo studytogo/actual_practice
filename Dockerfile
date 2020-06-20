@@ -16,6 +16,6 @@ WORKDIR $GOPATH/src/actual_practice
 
 ADD . .
 
-EXPOSE 9999
+EXPOSE 8080
 
 cmd bee run
