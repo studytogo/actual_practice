@@ -6,6 +6,8 @@ ENV TZ Asia/Shanghai
 
 RUN echo 'Asia/Shanghai' >/etc/timezone
 
+RUN go get github.com/beego/bee
+
 ENV GOPROXY https://goproxy.io/
 
 ENV GO111MODULE on
@@ -16,6 +18,4 @@ ADD . .
 
 EXPOSE 9999
 
-RUN chmod 777 perform.sh
-
-CMD ./perform.sh
+cmd bee run
