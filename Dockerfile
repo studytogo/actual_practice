@@ -6,7 +6,7 @@ ENV TZ Asia/Shanghai
 
 RUN echo 'Asia/Shanghai' >/etc/timezone
 
-RUN go get github.com/beego/bee
+#RUN go get github.com/beego/bee
 
 ENV GOPROXY https://goproxy.io/
 
@@ -18,4 +18,6 @@ ADD . .
 
 EXPOSE 8080
 
-cmd bee run
+RUN go build main.go
+
+CMD ./main
